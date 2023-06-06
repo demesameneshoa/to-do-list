@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Awesome Books </b></h3>
+  <h3><b>To-Do List </b></h3>
 
 </div>
 
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome Books] <a name="about-project"></a>
+# 📖 [To-Do List] <a name="about-project"></a>
 
-**Awesome Books** is a web page that allow you to Add, Display and Remove a book's data.
+**Awesome Books** is a web page that allow you to Add, Display and Remove tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,6 +45,7 @@
     <li><a href="https://html5.org">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
     <li><a href="https://www.javascript.com">JS</a></li>
+    <li><a href="https://www.javascript.com">Webpack</a></li>
   </ul>
 </details>
 
@@ -64,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://demesameneshoa.github.io/Awesome-Books/">Live Demo</a>
+- <a href="#">Coming Soon</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,8 +88,9 @@ Clone this repository to your desired folder:
 Example commands:
 
 ```sh
-  cd Awesome-Books
-  git clone git@github.com:demesameneshoa/Awesome-Books.git
+  mkdir todolist
+  cd todolist
+  git clone
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
