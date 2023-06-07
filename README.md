@@ -19,9 +19,6 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -33,7 +30,7 @@
 
 # 📖 [To-Do List] <a name="about-project"></a>
 
-**Awesome Books** is a web page that allow you to Add, Display and Remove tasks.
+**Todo List** is a an application that can be used as a todo list app to add, modify and edit daily tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,10 +39,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://html5.org">HTML</a></li>
-    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
-    <li><a href="https://www.javascript.com">JS</a></li>
-    <li><a href="https://www.javascript.com">Webpack</a></li>
+    <li>HTML</a></li>
+    <li>CSS</a></li>
+    <li>JS</a></li>
+    <li>Webpack</a></li>
   </ul>
 </details>
 
@@ -53,11 +50,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Add new books with title and their respective author**
-- **Delete previous books created**
-- **JavaScript Classes and Methods Used**
-- **Data Stored in Local Storage**
-- **Dynamic Content Display**
+- **List structure designed**
+- **Web pack deployed**
+- **JavaScript dynamically displays list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,13 +70,14 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+### Prerequisites <a name="prerequisites">
 
 In order to run this project you need:
 
 - Visual Studio Code
+- Node JS
 
-### Setup
+### Setup <a name="setup">
 
 Clone this repository to your desired folder:
 
@@ -90,7 +86,15 @@ Example commands:
 ```sh
   mkdir todolist
   cd todolist
-  git clone
+  git clone git@github.com:demesameneshoa/to-do-list.git
+```
+
+### Insatll <a name="install">
+
+Install webpack and its associated tools as dev dependencies by running the following command
+
+```
+npm install webpack webpack-cli webpack-dev-server html-webpack-plugin style-loader css-loader --save-dev
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -109,8 +113,8 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create a better Web design**
-- [ ] **Improve UI**
+- [ ] **Add and Remove Lists**
+- [ ] **Create Interactie list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
