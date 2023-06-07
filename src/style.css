@@ -42,17 +42,16 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-   box-shadow: 0 0px 5px 5px rgba(146, 144, 144, 0.76);
+  box-shadow: 0 0 5px 5px rgba(146, 144, 144, 0.76);
   background-color: rgb(252, 247, 247);
- 
   width: 25rem;
 }
 
 .header-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
-  align-items: center;    
+  justify-content: space-between;
+  align-items: center;
   border-bottom: #c9c5c5 solid 1px;
   padding: 1rem 1rem;
   box-sizing: border-box;
@@ -67,7 +66,7 @@ li {
 
 .clear-btn {
   border: none;
-  background-color: rgb(228, 227, 227);  
+  background-color: rgb(228, 227, 227);
   color: rgb(95, 94, 94);
   cursor: pointer;
   align-self: center;

@@ -1,7 +1,26 @@
-import {toDoLists,Todo} from './todolist.js';
+import Todo from './todolist.js';
+
+// toDoLists data
+const toDoLists = [
+  {
+    description: 'Read all the lesson articles.',
+    completed: false,
+    index: 0,
+  },
+  {
+    description: 'Complete all the projects.',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'Do the quiz.',
+    completed: false,
+    index: 2,
+  },
+];
 
 // Main component that holds all the elements
-export const render = () => {
+const render = () => {
   const container = document.createElement('div');
   const input = document.createElement('input');
   const ul = document.createElement('ul');
@@ -24,3 +43,5 @@ export const render = () => {
   container.append(input, ul, clearBtn);
   return container;
 };
+
+export default render;
