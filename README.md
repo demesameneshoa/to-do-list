@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
+<img src="./src/assets/mylogo.png" alt="logo" width="140"  height="auto" />
   <h3><b>To-Do List </b></h3>
 
 </div>
@@ -54,8 +54,16 @@
 - **Web pack deployed**
 - **JavaScript dynamically displays list**
 - **List add, read, update and delte functionality deployed**
+- **Task Completion interactive response deployed**
+- **Clear all completed tasks with one button**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Screen Shot -->
+
+## Screen Shot <a name="screen-shot"></a>
+
+<img src="./src/assets/screenshot.png" alt="logo" width="400"  height="auto" />
 
 <!-- LIVE DEMO -->
 
@@ -114,7 +122,7 @@ npm install webpack webpack-cli webpack-dev-server html-webpack-plugin style-loa
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create Interactie list**
+- [ ] **crete mobile responsive app**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

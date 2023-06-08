@@ -17,7 +17,6 @@ export const render = () => {
   input.placeholder = 'Add to your list...';
   clearBtn.textContent = 'Clear all completed';
   clearBtn.classList.add('clear-btn');
-  clearBtn.disabled = true;
   container.append(input);
   // Mapping through toDoLists array
   ul.innerHTML = '';
@@ -32,9 +31,9 @@ export const render = () => {
   mainContainer.appendChild(container);
 };
 
-const addTostorage = () => {
+export const addTostorage = () => {
   localStorage.setItem('toDoLists', JSON.stringify(toDoLists));
-  window.location.reload();
+  // window.location.reload();
 };
 // adding tasks to the todolist array
 export const addTask = (description) => {

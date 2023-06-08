@@ -16,7 +16,12 @@ const Todo = (toDoList) => {
 
   checkBox.type = 'checkbox';
   checkBox.id = `${toDoList.taskindex}`;
-
+  checkBox.checked = false;
+  label.classList.remove('completed-task');
+  if (toDoList.completed === true) {
+    checkBox.checked = true;
+    label.classList.add('completed-task');
+  }
   label.htmlFor = `check${toDoList.taskindex}`;
   label.classList.add('tasks');
   label.id = `${toDoList.taskindex}`;
