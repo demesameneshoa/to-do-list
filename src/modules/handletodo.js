@@ -60,7 +60,7 @@ export const removeTask = (delteIndex) => {
   // reset indexes of all array values
   const maxIndex = toDoLists.length;
   for (let i = 0; i < maxIndex; i += 1) {
-    toDoLists[i].taskindex = i+1;
+    toDoLists[i].taskindex = i + 1;
   }
   addTostorage();
 };
