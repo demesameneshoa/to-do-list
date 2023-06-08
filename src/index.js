@@ -1,5 +1,6 @@
 // Importing CSS styles
 import './style.css';
+import updateStatus from './modules/liststatus.js';
 import {
   render,
   addTask,
@@ -34,6 +35,7 @@ tasks.forEach((task) => {
         // get index of the task to delete from parent node
           const delteIndex = task.firstChild.firstChild.getAttribute('id');
           removeTask(delteIndex);
+          window.location.reload();
         // console.log(task.firstChild.firstChild);
         });
       }
@@ -51,5 +53,14 @@ taskblur.forEach((task) => {
     const editedIndex = child2.getAttribute('id');
     editTask(editedtext, editedIndex);
     window.location.reload();
+  });
+});
+
+const checkbox = document.querySelectorAll('input[type=checkbox]');
+checkbox.forEach((box) => {
+  box.addEventListener('change', () => {
+    const selectedId = box.getAttribute('id');
+    const boxStatus = box.checked;
+    updateStatus(selectedId, boxStatus);
   });
 });

@@ -32,9 +32,9 @@ export const render = () => {
   mainContainer.appendChild(container);
 };
 
-const addTostorage = () => {
+export const addTostorage = () => {
   localStorage.setItem('toDoLists', JSON.stringify(toDoLists));
-  window.location.reload();
+  // window.location.reload();
 };
 // adding tasks to the todolist array
 export const addTask = (description) => {
