@@ -15,9 +15,11 @@ const Todo = (toDoList) => {
   itemTaskElement.classList.add('list-element');
 
   checkBox.type = 'checkbox';
-  checkBox.id = `check${toDoList.index}`;
+  checkBox.id = `${toDoList.taskindex}`;
 
-  label.htmlFor = `check${toDoList.index}`;
+  label.htmlFor = `check${toDoList.taskindex}`;
+  label.classList.add('tasks');
+  label.id = `${toDoList.taskindex}`;
   label.innerText = toDoList.description;
 
   // Appending DOM elements to parent elements
