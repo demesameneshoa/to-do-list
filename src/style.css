@@ -1,12 +1,12 @@
 body {
-  font-family: sans-serif;
   background-color: #f6f6f6;
+  font-family: sans-serif;
+  color: #333;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #333;
-  height: 100vh;
 }
 
 input {
@@ -22,7 +22,7 @@ ul {
 }
 
 li {
-  padding: 1em;
+  padding: 0.3em 1em;
   margin: 0;
   list-style: none;
 }
@@ -88,4 +88,13 @@ li {
 .list-element {
   display: flex;
   justify-content: space-between;
+  line-height: 2.5rem;
+}
+
+.fas {
+  color: rgb(143, 143, 143);
+}
+
+.fas:hover {
+  color: rgb(184, 62, 62);
 }
