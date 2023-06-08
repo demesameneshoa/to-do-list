@@ -17,7 +17,6 @@ export const render = () => {
   input.placeholder = 'Add to your list...';
   clearBtn.textContent = 'Clear all completed';
   clearBtn.classList.add('clear-btn');
-  clearBtn.disabled = true;
   container.append(input);
   // Mapping through toDoLists array
   ul.innerHTML = '';

@@ -1,6 +1,10 @@
 // Importing CSS styles
 import './style.css';
-import updateStatus from './modules/liststatus.js';
+import {
+  updateStatus,
+  clearCompleted,
+}
+from './modules/liststatus.js';
 import {
   render,
   addTask,
@@ -63,4 +67,10 @@ checkbox.forEach((box) => {
     const boxStatus = box.checked;
     updateStatus(selectedId, boxStatus);
   });
+});
+
+const clearButton = document.querySelector('.clear-btn');
+clearButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  clearCompleted();
 });
