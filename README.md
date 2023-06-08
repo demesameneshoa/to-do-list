@@ -53,6 +53,7 @@
 - **List structure designed**
 - **Web pack deployed**
 - **JavaScript dynamically displays list**
+- **List add, read, update and delte functionality deployed**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +114,6 @@ npm install webpack webpack-cli webpack-dev-server html-webpack-plugin style-loa
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add and Remove Lists**
 - [ ] **Create Interactie list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
