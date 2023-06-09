@@ -69,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="#">Coming Soon</a>
+- <a href="https://demesameneshoa.github.io/to-do-list/">Click Here</a> to see the live demo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

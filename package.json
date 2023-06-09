@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://demesameneshoa.github.io/to-do-list",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
@@ -265,6 +267,7 @@
     "get-stream": "^5.2.0",
     "get-symbol-description": "^1.0.0",
     "get-uri": "^3.0.2",
+    "gh-pages": "^5.0.0",
     "glob": "^10.2.7",
     "glob-parent": "^5.1.2",
     "glob-to-regexp": "^0.4.1",
