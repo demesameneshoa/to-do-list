@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 import { removeTask, addTask } from '../modules/handletodo.js';
+
 jest.mock('../modules/list.js');
 test('removeTask function should remove the task from the array', () => {
   // mocks windows.location.reload funciton
