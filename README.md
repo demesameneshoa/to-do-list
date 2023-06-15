@@ -56,7 +56,7 @@
 - **List add, read, update and delte functionality deployed**
 - **Task Completion interactive response deployed**
 - **Clear all completed tasks with one button**
-- **Functions add and remove tested**
+- **Functions add, remove, edit, update and clear tested**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

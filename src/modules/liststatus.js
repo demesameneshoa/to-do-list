@@ -1,5 +1,3 @@
-// create list from local storage
-const taskLists = JSON.parse(localStorage.getItem('toDoLists')) || [];
 // change complete status true or false by checkbox status
 export const updateStatus = (checkedIndex, boxstatus) => {
   const taskLists = JSON.parse(localStorage.getItem('toDoLists')) || [];
@@ -9,6 +7,7 @@ export const updateStatus = (checkedIndex, boxstatus) => {
 };
 // function that clears all completed lists
 export const clearCompleted = () => {
+  const taskLists = JSON.parse(localStorage.getItem('toDoLists')) || [];
   const filteredArray = taskLists.filter((obj) => obj.completed === false);
   const maxIndex = filteredArray.length;
   for (let i = 0; i < maxIndex; i += 1) {
