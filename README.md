@@ -56,6 +56,7 @@
 - **List add, read, update and delte functionality deployed**
 - **Task Completion interactive response deployed**
 - **Clear all completed tasks with one button**
+- **Functions add and remove tested**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,6 +116,10 @@ npm install webpack webpack-cli webpack-dev-server html-webpack-plugin style-loa
 👤 **Demes Abera**
 
 - GitHub: [@githubhandle](https://github.com/demesameneshoa)
+
+👤 **lRebornsl**
+
+- GitHub: [@lRebornsl](https://github.com/lRebornsl)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
