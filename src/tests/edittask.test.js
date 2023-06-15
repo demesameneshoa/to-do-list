@@ -1,11 +1,11 @@
 /**
  * @jest-environment jsdom
  */
-import { removeTask, addTask } from '../modules/handletodo.js';
+import { editTask, addTask } from '../modules/handletodo.js';
 
 jest.mock('../modules/list.js');
-describe('Testing ClearCompleted function', () => {
-  test('removeTask function should remove the task from the array', () => {
+describe('Testing Edit Task function', () => {
+  test('EditTask function should edit the task description from the array', () => {
   // mocks windows.location.reload funciton
     const mockReload = jest.fn();
     Object.defineProperty(window, 'location', {
@@ -15,13 +15,13 @@ describe('Testing ClearCompleted function', () => {
     const mockTask = 'Test task 1';
     const mockTask2 = 'Test task 2';
     const mockTask3 = 'Test task 3';
-    // Call the addTask function with the mock task description
+    // Call the addTask and editTask function with the mock task description
     addTask(mockTask);
     addTask(mockTask2);
     addTask(mockTask3);
-    removeTask(1);
+    editTask('Updated task 2', 2);
     const taskList = JSON.parse(localStorage.getItem('toDoLists')) || [];
-    // Check if the new task was added to the toDoLists array
-    expect(taskList[1].description).not.toBe('Test task 2');
+    // Check if the new task was edited to the toDoLists array
+    expect(taskList[1].description).toBe('Updated task 2');
   });
 });

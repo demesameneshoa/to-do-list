@@ -1,11 +1,12 @@
 /**
  * @jest-environment jsdom
  */
-import { removeTask, addTask } from '../modules/handletodo.js';
+import { addTask } from '../modules/handletodo.js';
+import { clearCompleted, updateStatus } from '../modules/liststatus.js';
 
 jest.mock('../modules/list.js');
-describe('Testing ClearCompleted function', () => {
-  test('removeTask function should remove the task from the array', () => {
+describe('Testing Clear Completed function', () => {
+  test('ClearCompleted function should clear true arguments of array elements', () => {
   // mocks windows.location.reload funciton
     const mockReload = jest.fn();
     Object.defineProperty(window, 'location', {
@@ -15,13 +16,15 @@ describe('Testing ClearCompleted function', () => {
     const mockTask = 'Test task 1';
     const mockTask2 = 'Test task 2';
     const mockTask3 = 'Test task 3';
-    // Call the addTask function with the mock task description
+    // Call the addTask, updateStatus, and clearCompleted function with the mock task description
     addTask(mockTask);
     addTask(mockTask2);
     addTask(mockTask3);
-    removeTask(1);
+    updateStatus(1, true);
+    updateStatus(3, true);
+    clearCompleted();
     const taskList = JSON.parse(localStorage.getItem('toDoLists')) || [];
-    // Check if the new task was added to the toDoLists array
-    expect(taskList[1].description).not.toBe('Test task 2');
+    // Check if the new array contains only false elements
+    expect(taskList.length).toBe(1);
   });
 });
