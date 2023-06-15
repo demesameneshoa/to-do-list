@@ -2,6 +2,7 @@
 const taskLists = JSON.parse(localStorage.getItem('toDoLists')) || [];
 // change complete status true or false by checkbox status
 export const updateStatus = (checkedIndex, boxstatus) => {
+  const taskLists = JSON.parse(localStorage.getItem('toDoLists')) || [];
   taskLists[checkedIndex - 1].completed = boxstatus;
   localStorage.setItem('toDoLists', JSON.stringify(taskLists));
   window.location.reload();
