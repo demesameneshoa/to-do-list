@@ -18,7 +18,7 @@ test('EditTask function should edit the task description from the array', () => 
   addTask(mockTask);
   addTask(mockTask2);
   addTask(mockTask3);
-  editTask('Updated task 2',2);
+  editTask('Updated task 2', 2);
   const taskList = JSON.parse(localStorage.getItem('toDoLists')) || [];
   // Check if the new task was added to the toDoLists array
   expect(taskList[1].description).toBe('Updated task 2');
